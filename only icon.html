@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wine Logo Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      .wrapper svg {
+        transform-box: fill-box;
+        transform-origin: top;
+      }
+
+      #wine {
+        animation: wine 6s ease-in-out alternate;
+      }
+
+      #glass {
+        animation: glass 6s ease-in-out alternate;
+      }
+
+      #wine {
+        transform-box: fill-box;
+      }
+
+      @keyframes wine {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        10% {
+          transform: rotate(-6deg);
+          transform-origin: top right;
+        }
+
+        20% {
+          transform: rotate(6deg);
+          transform-origin: top left;
+        }
+
+        30% {
+          transform: rotate(-5deg);
+          transform-origin: top right;
+        }
+
+        40% {
+          transform: rotate(5deg);
+          transform-origin: top left;
+        }
+
+        50% {
+          transform: rotate(-4deg);
+          transform-origin: top right;
+        }
+
+        60% {
+          transform: rotate(4deg);
+          transform-origin: top left;
+        }
+
+        70% {
+          transform: rotate(-3.5deg);
+          transform-origin: top right;
+        }
+
+        80% {
+          transform: rotate(3.5deg);
+          transform-origin: top left;
+        }
+
+        85% {
+          transform: rotate(-2deg);
+        }
+
+        90% {
+          transform: rotate(2deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      #glass {
+        transform-box: fill-box;
+        transform-origin: center calc(100% - 200px);
+      }
+
+      @keyframes glass {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        10% {
+          transform-origin: right 250px;
+          transform: rotate(5.5deg);
+        }
+
+        20% {
+          transform-origin: left 250px;
+          transform: rotate(-5.5deg);
+        }
+
+        30% {
+          transform-origin: right 250px;
+          transform: rotate(4deg);
+        }
+
+        40% {
+          transform-origin: left 250px;
+          transform: rotate(-4deg);
+        }
+
+        50% {
+          transform-origin: right 250px;
+          transform: rotate(2deg);
+        }
+
+        60% {
+          transform-origin: left 250px;
+          transform: rotate(-2deg);
+        }
+
+        70% {
+          transform: rotate(0deg);
+        }
+
+        80% {
+          transform: rotate(0deg);
+        }
+
+        90% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 529 681"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="Icon">
+            <g id="wine">
+              <path
+                id="Vector"
+                d="M362.503 291.006C329.242 318.333 285.148 324.695 262.609 324.695C226.157 324.695 184.853 305.674 168.002 291.006C156.03 280.585 113.464 238.869 113.464 188.025C163.55 188.025 351.094 188.025 414.536 188.025C414.536 232.987 379.639 276.927 362.503 291.006Z"
+                fill="#910520"
+              />
+            </g>
+            <g id="glass">
+              <path
+                id="Vector_2"
+                d="M266.62 452.56L228.82 491.17L211.98 474.33L183.39 445.74V332.59C200.491 340.72 218.724 346.215 237.47 348.89V423.41L266.62 452.56Z"
+                fill="#910520"
+              />
+              <path
+                id="Vector_3"
+                d="M345.61 531.55V608.83H291.54V553.86L278.84 541.16L305.87 514.12L317.03 502.97L345.61 531.55Z"
+                fill="#910520"
+              />
+              <path
+                id="Vector_4"
+                d="M453.75 70.17V171.55C453.782 207.371 443.634 242.464 424.488 272.739C405.343 303.014 377.987 327.225 345.61 342.55V445.71L302.69 488.63L291.54 499.78L264.54 526.83L237.54 553.83V610.83H183.39V531.55L291.54 423.41V358.89C273.608 361.45 255.402 361.45 237.47 358.89C218.724 356.215 200.491 350.72 183.39 342.59C151.007 327.262 123.647 303.045 104.501 272.762C85.3546 242.479 75.2101 207.378 75.25 171.55V70.17H129.32V171.55C129.32 207.402 143.562 241.786 168.913 267.137C194.264 292.488 228.648 306.73 264.5 306.73C300.352 306.73 334.736 292.488 360.087 267.137C385.438 241.786 399.68 207.402 399.68 171.55V70.17H453.75Z"
+                fill="#1E1E1E"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
