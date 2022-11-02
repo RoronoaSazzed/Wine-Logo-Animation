@@ -39,22 +39,22 @@
         }
 
         10% {
-          transform: rotate(-6deg);
+          transform: rotate(-2deg);
           transform-origin: top right;
         }
 
         20% {
-          transform: rotate(6deg);
+          transform: rotate(2deg);
           transform-origin: top left;
         }
 
         30% {
-          transform: rotate(-5deg);
+          transform: rotate(-3deg);
           transform-origin: top right;
         }
 
         40% {
-          transform: rotate(5deg);
+          transform: rotate(3deg);
           transform-origin: top left;
         }
 
